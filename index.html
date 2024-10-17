@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mikaels hemsida</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <img src="./images/mikaelcompany.jpg" alt="Mikaels företag" width="100%" height="auto">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__page-title">Welcome to Mikaels Homepage!</h1>
+    </header>
+    <section class="main-content">
+        <button class="button" onclick="window.location.href='aboutme.html'">About Me</button>
+        <hr class="divider">
+        <button class="button" onclick="window.location.href='nintendo.html'">Nintendo</button>
+        <hr class="divider">
+    </section>
+    <div class="contact-container">
+        <form action="mailto:mikael.m.sand@gmail.com" enctype="text/plain" method="POST">
+            <div class="contact-title">
+                <h2 class="Contact">Contact</h2>
+            <div class="style">
+                <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+                <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                <button type="submit" class="borderless-button">
+                <img src="images/arrow2.jpg" class="arrow-button" alt="Send"></button>
+            </div>
+        </form>
+    </div>
+    <footer class="footer">
+        <p>Copyright &copy; Mikaels Hemsida 2024</p>
+    </footer>
+</body>
+</html>
