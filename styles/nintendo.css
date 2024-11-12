@@ -13,15 +13,18 @@ body {
     font-family: sans-serif;
     height: 100%;
     margin: 0;
+    padding: 0;
 }
 
 .audioPlayer audio{
     align-items: center;
-    bottom: 29%;
-    left: 40%;
+    bottom: 10%;
+    left: 50%;
+    max-width: 380px;
     position: absolute;
     top: 93%;
-    width: 20%;
+    transform: translateX(-50%);
+    width: 50%;
 }
 
 .button {
@@ -48,16 +51,17 @@ body {
 .header__container {
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
     max-width: 800px;
     padding: 0 20px;
-    flex-wrap: wrap;
 }
 
 .header img {
     display: block;
-    max-width: 100%;
+    height: auto;
+    width: 100%;
 }
 
 .header__page-title {
@@ -69,16 +73,13 @@ body {
 .nintendo-facts {
     background-image: url('../images/supermario.jpg');
     background-position: bottom;
-    background-size: 100% 100%;
+    background-size: cover;
     color: #fff;
-    font-family: sans-serif;
-    padding: 16px; 
     display: block;
-    max-width: 100%;
-}
-
-.nintendo-facts {
+    font-family: sans-serif;
     font-size: 1.5rem;
+    max-width: 100%;
+    padding: 16px;
     text-align: right;
 }
 
@@ -90,16 +91,23 @@ body {
 
 @media screen and (min-width: 768px) {
 
-    
+    .button {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
 
     .header__page-title {
-        font-size: 1.5rem;
-        
+        font-size: 1rem;   
     }
 
-     .nintendo-facts {
+    .nintendo-facts {
         display: block;
+        font-size: 1rem;
         max-width: 100%;
+        padding: 10px;
     }
 
+    .audioPlayer audio{
+        width: 80%;
+    }
 }
