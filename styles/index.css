@@ -41,7 +41,7 @@ body {
     margin: 32px auto;
     padding: 15px 30px; 
     text-align: center;
-    width: 380px;
+    width: 100%;
 }
 
 .button:hover {
@@ -65,7 +65,7 @@ body {
     padding-left: 25px;
     padding: 16px;
     transition: border 0.3s ease;
-    width: 380px;
+    width: 100%;
 }
 
 .contact-inputs:focus {
