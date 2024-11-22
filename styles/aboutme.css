@@ -237,6 +237,7 @@ body {
             "header"
             "main-content"
             "footer";
+        display: block;
     }
 
     .button {
@@ -268,7 +269,7 @@ body {
     }
 
     .sidebar {
-        display: none;
+        display: block;
     }
 
     .footer {
